@@ -1,0 +1,45 @@
+<p class="mb-2 fs-3 font-title mt-5">CONTATO</p>
+<hr class="m-0 mb-3 p-0">
+<section class="px-1">
+  <div class="row">
+    <form [formGroup]="form" class=" form-container col-6" style="background-color: #F2F2F2">
+      <div class="row g-2 py-3">
+        <div class="col-12">
+          <label for="name" style="font-size:13px" class="m-0 p-0 col-form-label">Nome</label>
+          <input type="text" id="name" formControlName="name" placeholder="Ex: Corrida" class="form-control">
+        </div>
+
+        <div class="col-6">
+          <label for="phone" style="font-size:13px" class="m-0 mt-1 p-0 col-form-label">Telefone</label>
+          <input type="text" id="phone" formControlName="phone" placeholder="Ex: (011) 00000-0000" class="form-control">
+        </div>
+
+        <div class="col-6">
+          <label for="email" style="font-size:13px" class="m-0 mt-1 p-0 col-form-label">E-mail</label>
+          <input type="text" id="email" formControlName="email" placeholder="Ex: email@email.com" class="form-control">
+        </div>
+
+        <div class="col-12">
+          <label for="details" style="font-size:13px" class="m-0 mt-1 p-0 col-form-label">Detalhes do Serviço</label>
+          <textarea id="details" formControlName="details" placeholder="Ex: solicitação, localização, data, prazo, etc"
+            class="form-control"
+            style="width: 100%; height: 150px; max-height: 300px; min-width: 200px; min-height: 100px;" rows="10"
+            maxlength="1500"></textarea>
+        </div>
+      </div>
+      <div class="row px-2">
+        <button mat-button class="mx-auto w-75">Enviar</button>
+      </div>
+
+    </form>
+    <!-- <div class="col-6">
+      <img src="../../../assets/img/alta-construcoes-hero-image.jpg" alt="banner do site alta construcoes"
+        style="max-width: 100%;">
+    </div> -->
+
+    <div class="col-6">
+      <img src="../../../assets/img/galeria-cliente-14.png" alt="banner do site alta construcoes"
+        style="max-width: 100%;">
+    </div>
+  </div>
+</section>

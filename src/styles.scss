@@ -1,4 +1,20 @@
 /* You can add global styles to this file, and also import other style files */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,400;0,600;1,300&display=swap');
+@import 'bootstrap/scss/bootstrap';
+
+:root {
+  --light-blue: #c2f3ff;
+  --dark-blue: #3533cd;
+  --offset: #d2d2d2;
+  --light: #ffffff;
+  --dark: #000000;
+}
+
+@font-face {
+    font-family: 'Poppins';
+    src: url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,400;0,600;1,300&display=swap');
+}
 
 html, body { height: 100%; }
-body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
+body { margin: 0; padding:0; font-family: Roboto, "Helvetica Neue", sans-serif;}
+
