@@ -37,26 +37,28 @@
             <a class="nav-link" routerLink="/home" (click)="scrollToDiv('heroContainer')" data-bs-toggle="collapse"
               data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false">Início</a>
           </li>
-          <li class="nav-item dropdown">
-            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-              Serviços
-            </a>
-            <ul class="dropdown-menu">
-              <li><a class="dropdown-item" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown"
-                  aria-controls="navbarNavDropdown" aria-expanded="false" (click)="scrollToDiv('galeria')">Galeria</a>
-              </li>
-              <li><a class="dropdown-item" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown"
-                  aria-controls="navbarNavDropdown" aria-expanded="false" (click)="scrollToDiv('sobre')">Sobre nós</a>
-              </li>
-            </ul>
-          </li>
+
           <li class="nav-item">
-            <a class="nav-link" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown"
-              aria-controls="navbarNavDropdown" aria-expanded="false" (click)="scrollToDiv('contato')">Contato</a>
+            <a class="nav-link" (click)="scrollToDiv('galeria')" data-bs-toggle="collapse"
+              data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false">Galeria</a>
           </li>
+
           <li class="nav-item">
-            <span class="nav-link" matTooltip="Em construção" matTooltipHideDelay="0">Agenda</span>
+            <a class="nav-link" (click)="scrollToDiv('sobre')" data-bs-toggle="collapse"
+              data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false">Sobre</a>
           </li>
+
+          <li class="nav-item">
+            <a class="nav-link" (click)="scrollToDiv('contato')" data-bs-toggle="collapse"
+              data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false">Contato</a>
+          </li>
+
+          <li class="nav-item">
+            <a class="nav-link" (click)="scrollToDiv('localizacao')" data-bs-toggle="collapse"
+              data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown"
+              aria-expanded="false">Localizacao</a>
+          </li>
+
         </ul>
       </div>
     </div>

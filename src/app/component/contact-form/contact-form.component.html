@@ -1,9 +1,10 @@
+<div class="w-100 py-1" id="contato"></div>
 <p class="mb-2 fs-3 font-title mt-5">CONTATO</p>
 <hr class="m-0 mb-3 p-0">
 <section class="px-1">
   <div class="row">
-    <form [formGroup]="form" class=" form-container col-6" style="background-color: #F2F2F2">
-      <div class="row g-2 py-3">
+    <form [formGroup]="form" class="col-12 mb-2 col-xl-6 mb-xl-0">
+      <div class="row g-2 py-3 px-2" style="background-color: #F2F2F2">
         <div class="col-12">
           <label for="name" style="font-size:13px" class="m-0 p-0 col-form-label">Nome</label>
           <input type="text" id="name" formControlName="name" placeholder="Ex: Corrida" class="form-control">
@@ -22,24 +23,19 @@
         <div class="col-12">
           <label for="details" style="font-size:13px" class="m-0 mt-1 p-0 col-form-label">Detalhes do Serviço</label>
           <textarea id="details" formControlName="details" placeholder="Ex: solicitação, localização, data, prazo, etc"
-            class="form-control"
-            style="width: 100%; height: 150px; max-height: 300px; min-width: 200px; min-height: 100px;" rows="10"
+            class="form-control" style="width: 100%; max-height: 100%;  min-width: 200px; min-height: 100px;" rows="10"
             maxlength="1500"></textarea>
         </div>
       </div>
-      <div class="row px-2">
-        <button mat-button class="mx-auto w-75">Enviar</button>
+      <div class="row g-2 py-3 px-2" style="background-color: #F2F2F2">
+        <button mat-button class="mx-auto w-75" (click)="sendEmail()">Enviar</button>
       </div>
 
     </form>
-    <!-- <div class="col-6">
-      <img src="../../../assets/img/alta-construcoes-hero-image.jpg" alt="banner do site alta construcoes"
-        style="max-width: 100%;">
-    </div> -->
 
-    <div class="col-6">
+    <div class="col-12 col-xl-6">
       <img src="../../../assets/img/galeria-cliente-14.png" alt="banner do site alta construcoes"
-        style="max-width: 100%;">
+        style="max-width: 100%;" class="image-col-6">
     </div>
   </div>
 </section>

@@ -3,3 +3,9 @@
   margin-bottom: -0.75em;
   font-weight: bold;
 }
+
+@media (min-width: 1200px) {
+  .image-col-6 {
+    max-height: 520px;
+  }
+}
