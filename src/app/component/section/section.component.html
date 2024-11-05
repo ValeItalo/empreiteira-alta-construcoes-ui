@@ -1,46 +1,40 @@
-<div class="w-100 py-2" id="galeria"></div>
-<div class="w-75 mx-auto">
-  <h2 class="fs-3 font-title">GALERIA</h2>
-  <hr>
-</div>
-<div class="d-flex justify-content-center flex-wrap w-75 mx-auto">
-  @for (picture of pictures; track $index) {
-  <div class="col-3 p-1">
-    <img src='{{picture.src}}' alt='{{picture.alt}}' class='img-fluid'>
+<div class="w-100 py-2" style="background-color: #80a5df;" id="galeria"></div>
+<div class="py-2" style="background-color: #f7f7f7;">
+  <div class="w-75 mx-auto">
+    <h2 class="fs-3 font-title">GALERIA</h2>
+    <hr>
   </div>
-  }
+  <div class="d-flex justify-content-center flex-wrap w-75 mx-auto pb-2">
+    @for (picture of pictures; track $index) {
+    <div class="col-3 p-1">
+      <img src='{{picture.src}}' alt='{{picture.alt}}' class="img-fluid img-galery" style="border-radius: 5px;">
+    </div>
+    }
+  </div>
 </div>
 
-<div class="w-100 py-2" id="sobre"></div>
-<div style="background-color: #F2F2F2">
+<div class="w-100 py-2" id="sobre" style="background-color: #80a5df;"></div>
+<div class="py-2" style="border-bottom: 14px solid #80a5df; background-color: #dfe8ed;">
   <div class="w-75 mx-auto">
     <h2 class="fs-3 font-title">SOBRE NÓS</h2>
     <hr class="mb-3">
 
-    <div class="row ">
-      <div class="col-12 col-xl-6">
+    <div class="row d-flex align-items-stretch">
+      <div class="col-12 col-xl-6 d-flex align-items-stretch">
         <img src="../../../assets/img/galeria-cliente-17.png" alt="banner do site alta construcoes"
-          style="max-width: 100%;">
+          style="width: 100%; height: 100%; object-fit: cover;">
       </div>
 
-      <div class="col-12 col-xl-6">
-        <div class="px-1 py-4 d-flex align-items-center">
-
-          <p class="lh-lg text-justify" style="font-size: 1.1rem;">
+      <div class="col-12 col-xl-6 d-flex align-items-center">
+        <div class="px-1">
+          <p class="lh-lg text-justify" style="font-size: 1rem; color: #07265e;">
             Fundada em 2022, a ALTA CONSTRUÇÕES E REFORMAS é <b>especializada em projetos e reformas</b> para escolas
-            estaduais
-            e
-            municipais, sempre comprometida com a excelência e a segurança em cada detalhe.
-            <br>
-            <br>
-            Contamos com uma equipe de
-            profissionais terceirizados altamente qualificados, preparados para atender a diversas necessidades em obras
-            e
-            manutenção. Nossos serviços incluem <b>instalações elétricas e hidráulicas, serralheria, marcenaria,
-              pintura,
-              demolição, jardinagem, poda de árvores, limpeza de caixas d’água, além da instalação de alarmes e sistemas
-              de
-              CFTV para garantir segurança e tranquilidade</b>.
+            estaduais e municipais, sempre comprometida com a excelência e a segurança em cada detalhe.
+            <br><br>
+            Contamos com uma equipe de profissionais terceirizados altamente qualificados, preparados para atender a
+            diversas necessidades em obras e manutenção. Nossos serviços incluem <b>instalações elétricas e hidráulicas,
+              serralheria, marcenaria, pintura, demolição, jardinagem, poda de árvores, limpeza de caixas d’água, além
+              da instalação de alarmes e sistemas de CFTV para garantir segurança e tranquilidade</b>.
             <br>
             <br>
             Na ALTA, cada projeto é uma oportunidade de transformar
@@ -49,15 +43,17 @@
           </p>
         </div>
       </div>
-
     </div>
   </div>
 </div>
-<div class="w-75 mx-auto">
-  <app-contact-form></app-contact-form>
+
+<div style="background-color: #f7f7f7;">
+  <div class="w-75 mx-auto">
+    <app-contact-form></app-contact-form>
+  </div>
 </div>
 <div class="box">
-  <a href="https://api.whatsapp.com/send?phone=5511971853340&text=Olá,%20Alta Construções e Reformas!">
+  <a href="https://api.whatsapp.com/send?phone=5511971853340&text=Olá,%20Alta Construções e Reformas!" target="_blank">
     <img src="../../../assets/img/whatsapp-logo.png">
   </a>
 </div>

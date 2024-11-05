@@ -2,6 +2,7 @@
   margin-top: 1em;
   margin-bottom: -0.75em;
   font-weight: bold;
+  color: #07265e;
 }
 
 .box {
@@ -17,4 +18,10 @@
 
 .text-justify {
   text-align: justify;
+}
+
+.img-galery:hover {
+  transform: scale(1.05);
+  transition: transform 0.5s;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
 }
