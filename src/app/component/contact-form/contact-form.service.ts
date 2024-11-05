@@ -1,7 +1,8 @@
 import { Injectable } from '@angular/core';
 import { environment } from '../../../environments/environment';
-import { HttpClient } from '@angular/common/http';
+import { HttpClient, HttpParams } from '@angular/common/http';
 import { Router } from '@angular/router';
+import { Observable } from 'rxjs';
 
 
 @Injectable({
@@ -13,11 +14,16 @@ export class ContactFormService {
 
   constructor(private http: HttpClient, private route: Router) { }
 
-  sendEmail(to: string, subject: string, body: string) {
-    const emailData = { to, subject, body };
-    console.log(this.http.post(`${this.API}/contact`, emailData))
-    console.log(emailData)
-    return this.http.post(`${this.API}/contact`, emailData);
-  }
+  // sendEmail(to: string, subject: string, body: string) {
+  //   return this.http.post(`${this.API}/contact`, emailData);
+  // }
 
+  sendEmail(to: string, subject: string, body: string): void {
+    const encodedSubject = encodeURIComponent(subject);
+    const encodedBody = encodeURIComponent(body);
+
+    const url = `https://empreiteira-alta-construcoes-api-production.up.railway.app/api/contact?to=${to}&subject=${encodedSubject}&body=${encodedBody}`;
+
+    this.http.get(url).subscribe();
+  }
 }

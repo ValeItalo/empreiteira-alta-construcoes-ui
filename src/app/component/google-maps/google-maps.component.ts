@@ -75,19 +75,18 @@ export class GoogleMapsComponent implements OnInit {
       lng: -46.67844822991959
     };
 
-    if (google.maps.marker && google.maps.marker.AdvancedMarkerElement) {
-      const marker = new google.maps.marker.AdvancedMarkerElement({
-        position: myEstablishmentLocation,
-        map: this.map,
-        title: 'Alta Construções e Reformas',
-        content: document.createElement('div'),
-      });
+    const marker = new google.maps.Marker({
+      position: myEstablishmentLocation,
+      map: this.map,
+      title: 'Alta Construções e Reformas'
+    });
 
-      const markerContent = document.createElement('div');
-      markerContent.innerHTML = '<strong>Alta Construções e Reformas</strong>';
-      marker.content = markerContent;
-    } else {
-      console.error('AdvancedMarkerElement is not available.');
-    }
+    const infoWindow = new google.maps.InfoWindow({
+      content: '<strong>Alta Construções e Reformas</strong>',
+    });
+
+    marker.addListener('click', () => {
+      infoWindow.open(this.map, marker);
+    });
   }
 }
