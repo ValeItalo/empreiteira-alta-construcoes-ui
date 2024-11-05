@@ -2,3 +2,13 @@
   width: 35px;
   margin-right: 0.5em;
 }
+
+.site-name {
+  font-size: 1.5rem;
+}
+
+@media (max-width: 768px) {
+  .site-name {
+    font-size: 0.9rem;
+  }
+}
