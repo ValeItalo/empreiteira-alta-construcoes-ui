@@ -1,10 +1,10 @@
 <div class="w-100 py-2" style="background-color: #80a5df;" id="galeria"></div>
-<div class="py-2" style="background-color: #f7f7f7;">
+<div class="pt-2 pb-4" style="background-color: #f7f7f7;">
   <div class="w-75 mx-auto">
     <h2 class="fs-3 font-title">GALERIA</h2>
     <hr>
   </div>
-  <div class="d-flex justify-content-center flex-wrap w-75 mx-auto pb-2">
+  <div class="d-flex justify-content-center flex-wrap w-75 mx-auto pb-4">
     @for (picture of pictures; track $index) {
     <div class="col-3 p-1">
       <img src='{{picture.src}}' alt='{{picture.alt}}' class="img-fluid img-galery" style="border-radius: 5px;">
@@ -14,13 +14,13 @@
 </div>
 
 <div class="w-100 py-2" id="sobre" style="background-color: #80a5df;"></div>
-<div class="py-2" style="border-bottom: 14px solid #80a5df; background-color: #dfe8ed;">
+<div class="pt-2 pb-4" style="border-bottom: 14px solid #80a5df; background-color: #dfe8ed;">
   <div class="w-75 mx-auto">
     <h2 class="fs-3 font-title">SOBRE NÓS</h2>
     <hr class="mb-3">
 
-    <div class="row d-flex align-items-stretch">
-      <div class="col-12 col-xl-6 d-flex align-items-stretch">
+    <div class="row d-flex align-items-stretch pb-4">
+      <div class="col-12 col-xl-6 mb-4 mb-xl-0 d-flex align-items-stretch">
         <img src="../../../assets/img/galeria-cliente-17.png" alt="banner do site alta construcoes"
           style="width: 100%; height: 100%; object-fit: cover;">
       </div>
@@ -48,7 +48,7 @@
 </div>
 
 <div style="background-color: #f7f7f7;">
-  <div class="w-75 mx-auto">
+  <div class="w-75 mx-auto pb-5">
     <app-contact-form></app-contact-form>
   </div>
 </div>
