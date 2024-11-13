@@ -4,6 +4,8 @@ Este projeto foi desenvolvido como parte do curso de Computação e integra o pr
 
 A aplicação do projeto visa consolidar os conhecimentos adquiridos em tecnologias de front-end e back-end, além de práticas de versionamento e organização de código.
 
+Este é o repositório **front-end** do projeto
+
 ## Tecnologias Utilizadas
 - **Front-end**: Angular 18 com Bootstrap 5
 - **Back-end**: Java 17 com Spring Boot 3
