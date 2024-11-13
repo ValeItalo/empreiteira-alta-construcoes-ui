@@ -1,35 +1,22 @@
 # Empreiteira Alta Construções e Reformas
 
-Este trabalho foi desenvolvido como parte da disciplina de Projeto Integrador do curso de Computação da Universidade Virtual do Estado de São Paulo (UNIVESP). Consiste no desenvolvimento de um website para a divulgação da Empreiteira Alta Construções e Reformas, uma empresa especializada em serviços de construção e reformas. O objetivo é criar uma presença online sólida, permitindo à empresa exibir seus projetos concluídos, gerenciar contatos com clientes e otimizar a comunicação para futuras contratações.
+Este projeto foi desenvolvido como parte do curso de Computação e integra o projeto final da disciplina de Projeto Integrador. O objetivo é promover a presença online da empresa **Alta Construções e Reformas**, com foco em divulgação de serviços, gestão de clientes e otimização do processo de contato através de uma interface moderna e intuitiva.
 
-A escolha do tema veio da oportunidade de aplicar os conhecimentos adquiridos durante a graduação para contribuir com o crescimento de uma empresa local, além de aprofundar os estudos em tecnologias de front-end, back-end e bancos de dados.
+A aplicação do projeto visa consolidar os conhecimentos adquiridos em tecnologias de front-end e back-end, além de práticas de versionamento e organização de código.
 
-Este repositório contém os arquivos referentes ao front-end da aplicação, desenvolvida com Angular, com o foco em apresentar os serviços e projetos realizados pela empresa de forma intuitiva e acessível.
+## Tecnologias Utilizadas
+- **Front-end**: Angular 18 com Bootstrap 5
+- **Back-end**: Java 17 com Spring Boot 3
+- **Banco de Dados**: MySQL
+- **Versionamento de Código**: GitHub
 
-## Development
+## Funcionalidades Principais
+- Exibição de localização por meio da API do Google Maps
+- Envio de e-mails através de formulário
+- Design responsivo e orientado para dispositivos móveis (mobile-first)
+- Integração com WhatsApp e redes sociais para contato direto com os clientes
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 18.1.4.
-
-## Development server
-
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
-
-## Code scaffolding
-
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
-
-## Build
-
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
-
-## Running unit tests
-
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
-
-## Running end-to-end tests
-
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
-
-## Further help
-
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.dev/tools/cli) page.
+## Acesse o Site
+Link: [Alta Construções e Reformas](https://altaconstrucoes.netlify.app/)
+## Apresentação do Trabalho
+Link: [Youtube](https://youtu.be/Y7fge9Kr2cM)
