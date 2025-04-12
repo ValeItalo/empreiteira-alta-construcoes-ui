@@ -31,6 +31,8 @@ export class ContactFormComponent implements OnInit {
       name: new FormControl(null, [Validators.required]),
       phone: new FormControl(null, [Validators.required]),
       email: new FormControl(null, [Validators.required, Validators.email]),
+      endereco: new FormControl(null),
+      prazo: new FormControl(null),
       details: new FormControl(null, Validators.required),
     });
   }
@@ -43,6 +45,8 @@ export class ContactFormComponent implements OnInit {
     const nome = this.form.get('name')?.value;
     const phone = this.form.get('phone')?.value;
     const email = this.form.get('email')?.value;
+    const endereco = this.form.get('endereco')?.value;
+    const prazo = this.form.get('prazo')?.value;
     const details = this.form.get('details')?.value;
 
     const to = 'alta.constru.site@gmail.com';
@@ -55,6 +59,8 @@ export class ContactFormComponent implements OnInit {
       **Nome:** ${nome}
       **Telefone:** ${phone}
       **E-mail:** ${email}
+      **Endereco:** ${endereco}
+      **Prazo:** ${prazo}
       **Detalhes:** ${details}
     `;
 

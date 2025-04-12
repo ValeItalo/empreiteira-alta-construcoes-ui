@@ -7,18 +7,27 @@ A aplicação do projeto visa consolidar os conhecimentos adquiridos em tecnolog
 Este é o repositório **front-end** do projeto
 
 ## Tecnologias Utilizadas
+
 - **Front-end**: Angular 18 com Bootstrap 5
 - **Back-end**: Java 17 com Spring Boot 3
 - **Banco de Dados**: MySQL
 - **Versionamento de Código**: GitHub
 
 ## Funcionalidades Principais
+
 - Exibição de localização por meio da API do Google Maps
 - Envio de e-mails através de formulário
 - Design responsivo e orientado para dispositivos móveis (mobile-first)
 - Integração com WhatsApp e redes sociais para contato direto com os clientes
 
 ## Acesse o Site
+
 Link: [Alta Construções e Reformas](https://altaconstrucoes.netlify.app/)
-## Apresentação do Trabalho
+
+## Apresentação do Trabalho no Projeto Integrador II
+
 Link: [Youtube](https://youtu.be/Y7fge9Kr2cM)
+
+## Apresentação do Trabalho no Projeto Integrador III
+
+Link: [Em desenvolvimento]

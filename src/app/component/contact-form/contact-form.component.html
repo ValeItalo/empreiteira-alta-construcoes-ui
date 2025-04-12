@@ -33,6 +33,19 @@
           </div>
         </div>
 
+        <div class="col-6">
+          <label for="endereco" style="font-size:13px" class="m-0 mt-1 p-0 col-form-label">Endereço da Obra</label>
+          <input type="text" id="endereco" formControlName="endereco"
+            placeholder="Ex: Avenida Dona Belmira Marin, 00 - Grajau" class="form-control" required>
+        </div>
+
+        <div class="col-6">
+          <label for="prazo" style="font-size:13px" class="m-0 mt-1 p-0 col-form-label">Prazo Desejado para
+            Conclusão</label>
+          <input type="text" id="prazo" formControlName="prazo" placeholder="Ex: 15/06/2025" class="form-control"
+            required>
+        </div>
+
         <div class="col-12">
           <label for="details" style="font-size:13px" class="m-0 mt-1 p-0 col-form-label">Detalhes do Serviço</label>
           <textarea id="details" formControlName="details" placeholder="Ex: solicitação, localização, data, prazo, etc"
